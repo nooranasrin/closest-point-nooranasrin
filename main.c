@@ -8,7 +8,7 @@ int main(void)
   POINT organism_points[POINTS_LENGTH] = ORGANISM_POINTS;
 
   for (int index = 0; index < POINTS_LENGTH; index++) {
-    POINT current_location = organism_points[index];
+    current_location = organism_points[index];
     get_closest_food(food_points, POINTS_LENGTH, current_location, &closest_food);
     printf("Location of organism: [%d %d],  Closest food target : [%d %d]\n", current_location.x, current_location.y, closest_food.x, closest_food.y);
   }
