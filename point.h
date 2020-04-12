@@ -16,6 +16,7 @@ Location of organism: [36 27],  Closest food target : [55 38]
 #define POINTS_LENGTH 5
 #define FOOD_POINTS { {18,76}, {19,66}, {89,57}, {9,71}, {55,38} }
 #define ORGANISM_POINTS { {18,86}, {97, 27}, {69, 7}, {10, 94}, {36, 27}}
+#define REPEAT for (int index = 0; index < POINTS_LENGTH; index++)
 
 typedef struct 
 {
@@ -23,7 +24,7 @@ typedef struct
   int y;
 } POINT;
 
-typedef float DISTANCE;
+typedef double DISTANCE;
 
 void get_closest_food(POINT food_points[], int points_length, POINT current_location, POINT *closest_food_location);
-DISTANCE find_distance(POINT point1, POINT point2);
+DISTANCE find_distance(POINT *point1, POINT *point2);
