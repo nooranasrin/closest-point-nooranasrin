@@ -26,3 +26,4 @@ typedef struct
 
 
 void get_closest_food(POINT food_points[], int points_length, POINT current_location, POINT *closest_food_location);
+unsigned long int find_distance(POINT point1, POINT point2);
