@@ -16,7 +16,7 @@ Location of organism: [36 27],  Closest food target : [55 38]
 #define POINTS_LENGTH 5
 #define FOOD_POINTS { {18,76}, {19,66}, {89,57}, {9,71}, {55,38} }
 #define ORGANISM_POINTS { {18,86}, {97, 27}, {69, 7}, {10, 94}, {36, 27}}
-#define REPEAT for (int index = 0; index < POINTS_LENGTH; index++)
+#define REPEAT(start, end) for (int index = start; index < end; index++)
 
 typedef struct 
 {
