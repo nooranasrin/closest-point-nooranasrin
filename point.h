@@ -13,6 +13,9 @@ Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
 
+#ifndef __POINT_H_
+#define __POINT_H_
+
 #define POINTS_LENGTH 5
 #define FOOD_POINTS { {18,76}, {19,66}, {89,57}, {9,71}, {55,38} }
 #define ORGANISM_POINTS { {18,86}, {97, 27}, {69, 7}, {10, 94}, {36, 27}}
@@ -28,3 +31,5 @@ typedef double DISTANCE;
 
 void get_closest_food(POINT food_points[], int points_length, POINT current_location, POINT *closest_food_location);
 DISTANCE find_distance(POINT point1, POINT point2);
+
+#endif
